@@ -12,14 +12,8 @@
     <link rel="stylesheet" href="css/styleproba.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" type="image/x-icon" href="img/favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <header class="header">
@@ -30,12 +24,36 @@
         <input type="checkbox" class="toggle-menu" />
         <div class="hamburger"></div>
 
-        <ul class="menu">
-          <li><a href="#">Szolgáltatásaink</a></li>
-          <li><a href="#">Munkáink</a></li>
-          <li><a href="#">Rólunk</a></li>
-          <li><a href="#">Ajánlatkérés</a></li>
-        </ul>
+        <div class="menu">
+          <div
+            class="dropdown"
+            onmouseenter="showServicesDropdownMenu()"
+            onmouseleave="hideServicesDropdownMenu()"
+            onclick="showServicesDropdownMenu()"
+          >
+            <a class="menu-item-dropdown" id="servicesMenuItem">
+              Szolgáltatásaink
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container" id="servicesMenuDropdown">
+              <a class="menu-item-dropdown" href="#">Logó- és arculattervezés</a>
+              <a class="menu-item-dropdown" href="#">Egyedi weboldal</a>
+              <a class="menu-item-dropdown" href="#">Webshop készítés</a>
+            </div>
+          </div>
+          <a class="side-menu-item">
+            Szolgáltatásaink
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="side-dropdown-container">
+            <a class="side-menu-item-dropdown" href="#">Logó- és arculattervezés</a>
+            <a class="side-menu-item-dropdown" href="#">Egyedi weboldal</a>
+            <a class="side-menu-item-dropdown" href="#">Webshop készítés</a>
+          </div>
+          <a class="menu-item" href="#">Munkáink</a>
+          <a class="menu-item" href="#">Rólunk</a>
+          <a class="menu-item" href="#">Ajánlatkérés</a>
+        </div>
       </div>
     </header>
     <main>
@@ -44,10 +62,8 @@
           <div class="hero-text">
             <h1>Sed ut perspiciatis unde perspiciatis</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
             </p>
             <div id="menu-button">
               <a class="button" href="/"> Csináljuk! </a>
@@ -65,8 +81,7 @@
               <img src="img/arculattervezes.svg" alt="" />
               <h3>Logó- és arculat tervezés</h3>
               <p>
-                A branding és a pontosan megtervezett vizuális megjelenés a
-                siker egyik alapköve. Egy jól megtervezett arculat növeli a
+                A branding és a pontosan megtervezett vizuális megjelenés a siker egyik alapköve. Egy jól megtervezett arculat növeli a
                 láthatóságot, bizalmat kelt, segíti az értékesítést.
               </p>
               <a href="#" class="button">Érdekel</a>
@@ -75,8 +90,7 @@
               <img src="img/webicon.svg" alt="" />
               <h3>Webdesign, Sitebuilt</h3>
               <p>
-                A digitális arculat legfontosabb eszköze a weboldal. Segítünk,
-                hogy kitűnj a tömegből és weboldalad egyszerre felelen meg
+                A digitális arculat legfontosabb eszköze a weboldal. Segítünk, hogy kitűnj a tömegből és weboldalad egyszerre felelen meg
                 marketing és kommunikációs céloknak is.
               </p>
               <a href="#" class="button">Érdekel</a>
@@ -85,10 +99,8 @@
               <img src="img/shop.svg" alt="" />
               <h3>Webshop készítés</h3>
               <p>
-                A közös munka során egyedi grafikákkal, bannerekkel tesszük
-                teljesen egyedivé a webáruházad, és használatba vétel után is
-                rendelkezésedre állunk karbantartási, üzemeltetési és további
-                grafikai munkára.
+                A közös munka során egyedi grafikákkal, bannerekkel tesszük teljesen egyedivé a webáruházad, és használatba vétel után is
+                rendelkezésedre állunk karbantartási, üzemeltetési és további grafikai munkára.
               </p>
               <a href="#" class="button">Érdekel</a>
             </div>
@@ -134,18 +146,10 @@
               <h2>Dolgozzunk együtt!</h2>
 
               <ul>
-                <li>
-                  Megmutatjuk a célközönségednek, miért te vagy a legjobb!
-                </li>
-                <li>
-                  Téged fog tükrözni a végeredmény, legyen akármilyen stílusról
-                  szó.
-                </li>
+                <li>Megmutatjuk a célközönségednek, miért te vagy a legjobb!</li>
+                <li>Téged fog tükrözni a végeredmény, legyen akármilyen stílusról szó.</li>
                 <li>A jó design egyenlő a jó businessel.</li>
-                <li>
-                  Segítünk, hogy weboldalad által sikeresebb legyen a
-                  vállalkozásod!
-                </li>
+                <li>Segítünk, hogy weboldalad által sikeresebb legyen a vállalkozásod!</li>
               </ul>
               <a class="button" href="/"> Csináljuk! </a>
             </div>
@@ -181,6 +185,33 @@
         <p>Copyright 2021 Webdesign | Minden jog fenntartva.</p>
       </div>
     </div>
-    <script type="text/javascript" src=""></script>
+    <script>
+      let width = window.innerWidth;
+      function showServicesDropdownMenu() {
+        if (width >= 992) {
+          document.getElementById("servicesMenuDropdown").classList.add("show");
+          document.getElementById("servicesMenuItem").classList.add("menu-item-hover");
+        }
+      }
+      function hideServicesDropdownMenu() {
+        document.getElementById("servicesMenuDropdown").classList.remove("show");
+        document.getElementById("servicesMenuItem").classList.remove("menu-item-hover");
+      }
+
+      var dropdown = document.getElementsByClassName("side-menu-item");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
