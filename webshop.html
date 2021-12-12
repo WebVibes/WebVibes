@@ -12,30 +12,47 @@
     <link rel="stylesheet" href="css/styleproba.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" type="image/x-icon" href="img/favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="logo">
-        <a href="#"><img src="img/logotervuj.svg" alt="" /></a>
+        <a href="./index.html"><img src="img/logotervuj.svg" alt="" /></a>
       </div>
       <div class="navigation">
         <input type="checkbox" class="toggle-menu" />
         <div class="hamburger"></div>
-
-        <ul class="menu">
-          <li><a href="#">Szolgáltatásaink</a></li>
-          <li><a href="#">Munkáink</a></li>
-          <li><a href="#">Rólunk</a></li>
-          <li><a href="#">Ajánlatkérés</a></li>
-        </ul>
+        <div class="menu">
+          <div
+            class="dropdown"
+            onmouseenter="showServicesDropdownMenu()"
+            onmouseleave="hideServicesDropdownMenu()"
+            onclick="showServicesDropdownMenu()"
+          >
+            <a class="menu-item-dropdown active-menu-item" id="servicesMenuItem">
+              Szolgáltatásaink
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container" id="servicesMenuDropdown">
+              <a class="menu-item-dropdown" href="./arculat.html">Logó- és arculattervezés</a>
+              <a class="menu-item-dropdown" href="./design.html">Egyedi weboldal</a>
+              <a class="menu-item-dropdown" href="./webshop.html">Webshop készítés</a>
+            </div>
+          </div>
+          <a class="side-menu-item active-menu-item">
+            Szolgáltatásaink
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="side-dropdown-container">
+            <a class="side-menu-item-dropdown" href="#">Logó- és arculattervezés</a>
+            <a class="side-menu-item-dropdown" href="#">Egyedi weboldal</a>
+            <a class="side-menu-item-dropdown" href="#">Webshop készítés</a>
+          </div>
+          <a class="menu-item" href="#">Munkáink</a>
+          <a class="menu-item" href="#">Rólunk</a>
+          <a class="menu-item" href="#">Ajánlatkérés</a>
+        </div>
       </div>
     </header>
     <main>
@@ -44,10 +61,8 @@
           <div class="hero-text">
             <h1>Webshop készítés</h1>
             <p>
-              A közös munka során egyedi grafikákkal, bannerekkel tesszük
-              teljesen egyedivé a webáruházad, és használatba vétel után is
-              rendelkezésedre állunk karbantartási, üzemeltetési és további
-              grafikai munkára.
+              A közös munka során egyedi grafikákkal, bannerekkel tesszük teljesen egyedivé a webáruházad, és használatba vétel után is
+              rendelkezésedre állunk karbantartási, üzemeltetési és további grafikai munkára.
             </p>
           </div>
         </div>
@@ -62,8 +77,7 @@
               <img src="img/meeteng.svg" alt="" />
               <h3>Igény felmérés</h3>
               <p>
-                Online meeting során felmérjük a vállalkozásod múltját, jelenét
-                és vízióját, felderítjük az értékeidet, célközönségedet,
+                Online meeting során felmérjük a vállalkozásod múltját, jelenét és vízióját, felderítjük az értékeidet, célközönségedet,
                 versenytársaidat. Ez lesz a tervezési folyamat alapja.
               </p>
             </div>
@@ -71,18 +85,14 @@
               <img src="img/tervezes.svg" alt="" />
               <h3>Tervek elkészítése</h3>
               <p>
-                látványtervek segítségével bemutatjuk a fő grafikai irányt, amit
-                igényeid szerint módosítunk, hogy a végeredménnyel teljesen
+                látványtervek segítségével bemutatjuk a fő grafikai irányt, amit igényeid szerint módosítunk, hogy a végeredménnyel teljesen
                 azonosulni tudj.
               </p>
             </div>
             <div class="box">
               <img src="img/kivitelezes.svg" alt="" />
               <h3>Megvalósítás</h3>
-              <p>
-                Az átbeszélt módosítások után kidolgozzuk a végleges terveket,
-                amik alapján fejlesztünk, majd tesztelünk.
-              </p>
+              <p>Az átbeszélt módosítások után kidolgozzuk a végleges terveket, amik alapján fejlesztünk, majd tesztelünk.</p>
             </div>
           </div>
         </div>
@@ -100,9 +110,8 @@
               <h2>A weboldal ára</h2>
               <h3>150 000 Ft-tól</h3>
               <p>
-                A projekt teljes díjának 30%-át a tervek elkészítése előtt
-                kiszámlázzuk. A fennmaradó 70%-ot az átadást megelőzően kell
-                majd kifizetned.
+                A projekt teljes díjának 30%-át a tervek elkészítése előtt kiszámlázzuk. A fennmaradó 70%-ot az átadást megelőzően kell majd
+                kifizetned.
               </p>
             </div>
           </div>
@@ -126,10 +135,7 @@
                 <li>Alap biztonsági funkciók beállítása</li>
                 <li>Számlázó programmal összekötés</li>
                 <li>Kuponok, akciók, e-mailek beállítása</li>
-                <li>
-                  Igény esetén a tartalom rendszeres karbantartása, frissítése,
-                  termékfeltöltés
-                </li>
+                <li>Igény esetén a tartalom rendszeres karbantartása, frissítése, termékfeltöltés</li>
                 <li>Átadás után 4 hetes támogatás</li>
                 <li>Domain és tárhely beállítása</li>
               </ul>
@@ -156,17 +162,10 @@
               <div class="container">
                 <div class="contact-box">
                   <h2>Készen állsz a közös munkára?</h2>
-                  <p>
-                    Írj nekünk az alábbi adatok kitöltésével és hamarosan
-                    felvesszük veled a kapcsolatot.
-                  </p>
+                  <p>Írj nekünk az alábbi adatok kitöltésével és hamarosan felvesszük veled a kapcsolatot.</p>
                   <input type="text" class="field" placeholder="Név" />
                   <input type="email" class="field" placeholder="E-mail" />
-                  <input
-                    type="text"
-                    class="field"
-                    placeholder="Miben segíthetünk?"
-                  />
+                  <input type="text" class="field" placeholder="Miben segíthetünk?" />
                   <textarea class="field area" placeholder="Üzenet "></textarea>
                   <div class="input_field terms">
                     <label class="check">
@@ -174,9 +173,7 @@
                       <span class="checkmark"></span>
                     </label>
                     <div>
-                      <p>
-                        Elfogadom az Adatkezelési Tájékoztatóban foglaltakat.
-                      </p>
+                      <p>Elfogadom az Adatkezelési Tájékoztatóban foglaltakat.</p>
                     </div>
                   </div>
 
@@ -219,6 +216,6 @@
         <p>Copyright 2021 Webdesign | Minden jog fenntartva.</p>
       </div>
     </div>
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="menu.js"></script>
   </body>
 </html>
