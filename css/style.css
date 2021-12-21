@@ -67,7 +67,11 @@ a {
 section {
   margin-bottom: 4vw;
 }
-
+#hero-contact {
+  padding: 5vw 0;
+  position: relative;
+  background: linear-gradient(to right, #b2a6c9, #e89e4a);
+}
 #hero {
   background-size: auto 50%;
   padding: 10vw 0;
@@ -101,6 +105,14 @@ section {
   height: 85%;
   z-index: 1;
 }
+.contactimg {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: auto;
+  height: 100%;
+  z-index: 1;
+}
 .logolatvany {
   position: absolute;
   bottom: 5%;
@@ -115,6 +127,7 @@ section {
   right: 0;
   width: auto;
   height: 85%;
+  z-index: 1;
 }
 .webkep {
   position: absolute;
@@ -123,7 +136,32 @@ section {
   width: auto;
   height: 85%;
 }
-
+.hullam-contact {
+  position: absolute;
+  opacity: 15%;
+  bottom: -6rem;
+  width: 32rem;
+}
+.kor-contact {
+  position: absolute;
+  opacity: 15%;
+  bottom: 1rem;
+  right: 3%;
+  width: 18rem;
+}
+.hullam-contact2 {
+  position: absolute;
+  opacity: 15%;
+  bottom: -12rem;
+  width: 32rem;
+}
+.kor-contact2 {
+  position: absolute;
+  opacity: 15%;
+  bottom: 1rem;
+  right: 3%;
+  width: 18rem;
+}
 .hullam {
   position: absolute;
   opacity: 15%;
@@ -206,6 +244,11 @@ section {
   padding-bottom: 1rem;
   text-align: center;
 }
+#portfolio2 h2 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
 #portfolio img {
   margin-bottom: 1rem;
 }
@@ -218,19 +261,26 @@ section {
   margin-bottom: 1rem;
 }
 #how-we-work ul,
-#how-we-work2 ul {
+#how-we-work2 ul,
+#how-we-workcontact ul {
   overflow: hidden;
   margin: 0 0 20px 0;
 }
 
 #how-we-work ul li,
-#how-we-work2 ul li {
+#how-we-work2 ul li,
+#how-we-workcontact li {
   margin-bottom: 8px;
   line-height: 1.4;
   position: relative;
   padding-left: 30px;
 }
-#how-we-work ul li:before {
+#about {
+  padding-top: 5rem;
+}
+
+#how-we-work ul li:before,
+#how-we-workcontact ul li:before {
   content: "";
   width: 20px;
   height: 20px;
@@ -242,7 +292,8 @@ section {
   top: 50%;
   margin-top: -10px;
 }
-#how-we-work ul li:after {
+#how-we-work ul li:after,
+#how-we-workcontact ul li:after {
   content: "";
   width: 8px;
   height: 12px;
@@ -266,19 +317,51 @@ section {
   margin-bottom: 1rem;
 }
 footer {
-  background: linear-gradient(to right, #b2a6c9, #e89e4a);
+  background: #f6f6f6;
   padding: 1.5rem 0;
   font-size: smaller;
-  color: white;
+  color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.foot-logo {
+  padding: 20px;
+}
+.foot-info,
+.foot-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  display: inline-block;
+  background: url(../img/email.svg) center left no-repeat;
+  background-size: auto 100%;
+  padding-left: 2rem;
+  color: inherit;
+}
+.tel {
+  display: inline-block;
+  background: url(../img/tel.svg) center left no-repeat;
+  background-size: auto 100%;
+  padding-left: 2rem;
+  color: inherit;
+}
+
+.foot-info li a,
+.foot-contact li a {
+  color: black;
+}
+
 #foot-info li,
 #foot-contact li {
-  display: inline-block;
+  display: flex;
   margin: 0 1rem;
+  padding: 0.5rem;
 }
 #foot-info li a {
   color: inherit;
@@ -314,15 +397,18 @@ img {
 #hero2 p,
 #hero3 p,
 #hero4 p,
+#about p,
 #how-we-work2 p {
   padding-bottom: 1rem;
 }
 
-#how-we-work2 h2 {
+#how-we-work2 h2,
+#about h2 {
   padding-bottom: 0;
 }
 
-#how-we-work2 img {
+#how-we-work2 img,
+#about img {
   width: 90%;
 }
 .container {
@@ -411,7 +497,8 @@ img {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   margin-bottom: 5rem;
 }
-.munkaink {
+.munkaink,
+.munkaink1 {
   margin: 0 auto;
   width: 80%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -438,7 +525,36 @@ header {
   width: 20rem;
 }
 
+.offershop {
+  width: 90%;
+}
 @media screen and (max-width: 1280px) {
+  .hotel,
+  .munkaink1 {
+    margin-top: 4rem;
+  }
+  .contactimg {
+    position: absolute;
+    bottom: 5%;
+    right: 9%;
+    width: auto;
+    height: 90%;
+    z-index: 1;
+  }
+  .hullam-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 8rem;
+    width: 25rem;
+  }
+  .kor-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 9%;
+    width: 14rem;
+  }
+
   .hullamarculat {
     position: absolute;
     opacity: 15%;
@@ -491,10 +607,12 @@ header {
     padding-bottom: 3rem;
   }
   .logoarculat,
-  .mi {
+  .mi,
+  .offershop {
     padding-top: 5rem;
     padding-bottom: 3rem;
   }
+
   .content-box {
     width: 80%;
   }
@@ -553,12 +671,51 @@ header {
   }
 
   #how-we-work2,
+  #about,
   #how-we-work,
+  #how-we-workcontact,
   #services {
     padding-bottom: 2rem;
   }
+  #hero-contact {
+    padding: 9vw 0;
+  }
 }
 @media screen and (max-width: 1199px) {
+  .contactimg {
+    position: absolute;
+    bottom: 11%;
+    right: 9%;
+    width: auto;
+    height: 80%;
+    z-index: 1;
+  }
+  .hullam-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 3rem;
+    width: 30rem;
+  }
+  .kor-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 16rem;
+  }
+  .hullam-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: -3rem;
+    width: 25rem;
+  }
+  .kor-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 15rem;
+  }
   .hullamdesign {
     position: absolute;
     opacity: 15%;
@@ -673,10 +830,12 @@ header {
     width: calc(50% - 2rem);
   }
 
-  #portfolio img {
+  #portfolio img,
+  #portfolio2 img {
     width: 100%;
   }
-  #portfolio h3 {
+  #portfolio h3,
+  #portfolio2 h3 {
     font-size: 1.3rem;
   }
   #kapcsolat {
@@ -697,10 +856,12 @@ header {
   }
   #how-we-work,
   #how-we-work2,
+  #about,
   #services {
     padding-bottom: 2rem;
   }
-  #portfolio {
+  #portfolio,
+  #portfolio2 {
     padding-bottom: 0;
   }
 
@@ -723,6 +884,27 @@ header {
 }
 
 @media screen and (max-width: 1073px) {
+  .contactimg {
+    position: absolute;
+    bottom: 11%;
+    right: 9%;
+    width: auto;
+    height: 80%;
+    z-index: 1;
+  }
+  .hullam-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 8rem;
+    width: 25rem;
+  }
+  .kor-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 9%;
+    width: 14rem;
+  }
   .hullamdesign {
     position: absolute;
     opacity: 15%;
@@ -795,6 +977,47 @@ header {
   }
 }
 @media screen and (max-width: 990px) {
+  #about {
+    padding-top: 3rem;
+  }
+  .contactimg {
+    position: absolute;
+    bottom: -13rem;
+    right: 18rem;
+    width: auto;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .hullam-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 3rem;
+    width: 25rem;
+  }
+  .kor-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 14rem;
+  }
+  .hullam-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: -4rem;
+    width: 21rem;
+  }
+  .kor-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 13rem;
+  }
+  .offershop {
+    padding-top: 3rem;
+  }
   .hullamweb {
     position: absolute;
     opacity: 15%;
@@ -945,8 +1168,10 @@ header {
   }
 
   #portfolio,
+  #portfolio2,
   #how-we-work,
   #how-we-work2,
+  #about,
   .laptop,
   #services {
     padding-bottom: 2rem;
@@ -955,13 +1180,18 @@ header {
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
+  .textcontact {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
   #services h3 {
     padding-top: 1rem;
   }
   #services .button {
     margin-top: 1rem;
   }
-  #portfolio h2 {
+  #portfolio h2,
+  #portfolio2 h2 {
     text-align: center;
   }
   #services h2 {
@@ -993,6 +1223,19 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
+  .hullam-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 5rem;
+    width: 21rem;
+  }
+  .kor-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 12rem;
+  }
   .hullamweb {
     position: absolute;
     opacity: 15%;
@@ -1115,7 +1358,8 @@ header {
   .column-3 > div {
     width: calc(100% - 2rem);
   }
-  #portfolio h3 {
+  #portfolio h3,
+  #portfolio2 h3 {
     font-size: 1.2rem;
   }
 
@@ -1137,11 +1381,13 @@ header {
   #services .button {
     margin-top: 1rem;
   }
-  #portfolio h2 {
+  #portfolio h2,
+  #portfolio2 h2 {
     text-align: center;
   }
 
-  #how-we-work2 {
+  #how-we-work2,
+  #about {
     padding-top: 2rem;
   }
 
@@ -1158,14 +1404,54 @@ header {
   #services p {
     padding-bottom: 0;
   }
-  #portfolio img {
+  #portfolio img,
+  #portfolio2 img {
     width: 100%;
   }
   #kapcsolat {
     padding-top: 1rem;
   }
+  .hullam-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: -6rem;
+    width: 21rem;
+  }
+  .kor-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 13rem;
+  }
 }
 @media screen and (max-width: 647px) {
+  .hullam-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: -5rem;
+    width: 18rem;
+  }
+  .kor-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 8rem;
+  }
+  .hullam-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 11rem;
+    width: 18rem;
+  }
+  .kor-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 10rem;
+  }
   .hullamweb {
     position: absolute;
     opacity: 15%;
@@ -1227,6 +1513,32 @@ header {
   }
 }
 @media screen and (max-width: 500px) {
+  .hullam-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: -2rem;
+    width: 14rem;
+  }
+  .kor-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 7rem;
+  }
+  .hullam-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 5rem;
+    width: 15rem;
+  }
+  .kor-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 10rem;
+  }
   .hullamweb {
     position: absolute;
     opacity: 15%;
@@ -1285,11 +1597,6 @@ header {
   header {
     padding-bottom: 1rem;
   }
-  #logo {
-    max-width: initial;
-    width: 20%;
-    margin: 0 auto 1rem auto;
-  }
   #tel {
     margin: 0 auto;
   }
@@ -1306,7 +1613,8 @@ header {
   h2 {
     font-size: 2rem;
   }
-  #portfolio p {
+  #portfolio p,
+  #portfolio2 p {
     padding-bottom: 2rem;
   }
 
@@ -1325,10 +1633,12 @@ header {
   #services .button {
     margin-top: 1rem;
   }
-  #portfolio h2 {
+  #portfolio h2,
+  #portfolio2 h2 {
     text-align: center;
   }
-  #portfolio img {
+  #portfolio img,
+  #portfolio2 img {
     width: 100%;
   }
   .mi {
@@ -1374,6 +1684,32 @@ header {
   }
 }
 @media screen and (max-width: 380px) {
+  .hullam-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: -1rem;
+    width: 14rem;
+  }
+  .kor-contact2 {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 5rem;
+  }
+  .hullam-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 6rem;
+    width: 15rem;
+  }
+  .kor-contact {
+    position: absolute;
+    opacity: 15%;
+    bottom: 1rem;
+    right: 3%;
+    width: 8rem;
+  }
   .hullamweb {
     position: absolute;
     opacity: 15%;
