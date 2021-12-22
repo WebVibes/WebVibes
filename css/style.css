@@ -249,7 +249,7 @@ section {
   padding-top: 2rem;
   text-align: center;
 }
-#portfolio img{
+#portfolio img {
   margin-bottom: 1rem;
 }
 #services img {
@@ -326,6 +326,37 @@ footer {
   align-items: center;
 }
 
+.foot-logo {
+  padding: 20px;
+}
+.foot-info,
+.foot-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  display: inline-block;
+  background: url(../img/email.svg) center left no-repeat;
+  background-size: auto 100%;
+  padding-left: 2rem;
+  color: inherit;
+}
+.tel {
+  display: inline-block;
+  background: url(../img/tel.svg) center left no-repeat;
+  background-size: auto 100%;
+  padding-left: 2rem;
+  color: inherit;
+}
+
+.foot-info li a,
+.foot-contact li a {
+  color: black;
+}
+
 #foot-info li,
 #foot-contact li {
   display: flex;
@@ -369,7 +400,6 @@ img {
 #hero3 p,
 #hero4 p,
 #about p,
-
 #how-we-work2 p {
   padding-bottom: 1rem;
 }
@@ -379,8 +409,8 @@ img {
   padding-bottom: 0;
 }
 
-#how-we-work2 img ,
-#about img{
+#how-we-work2 img,
+#about img {
   width: 90%;
 }
 .container {
@@ -496,20 +526,6 @@ header {
   right: 3%;
   width: 20rem;
 }
-.email {
-  display: inline-block;
-  background: url(../img/email.svg) center left no-repeat;
-  background-size: auto 100%;
-  padding-left: 2rem;
-  color: inherit;
-}
-.tel {
-  display: inline-block;
-  background: url(../img/tel.svg) center left no-repeat;
-  background-size: auto 100%;
-  padding-left: 2rem;
-  color: inherit;
-}
 .offershop {
   width: 90%;
 }
@@ -539,7 +555,6 @@ header {
     right: 9%;
     width: 14rem;
   }
-  
   .hullamarculat {
     position: absolute;
     opacity: 15%;
@@ -593,11 +608,11 @@ header {
   }
   .logoarculat,
   .mi,
-  .offershop{
+  .offershop {
     padding-top: 5rem;
     padding-bottom: 3rem;
   }
- 
+
   .content-box {
     width: 80%;
   }
@@ -963,7 +978,6 @@ header {
 }
 @media screen and (max-width: 990px) {
   #about {
-
     padding-top: 3rem;
   }
   .contactimg {
@@ -1177,7 +1191,7 @@ header {
     margin-top: 1rem;
   }
   #portfolio h2,
-  #portfolio2 h2{
+  #portfolio2 h2 {
     text-align: center;
   }
   #services h2 {
@@ -1209,7 +1223,6 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
-  
   .hullam-contact {
     position: absolute;
     opacity: 15%;
@@ -1369,12 +1382,12 @@ header {
     margin-top: 1rem;
   }
   #portfolio h2,
-  #portfolio2 h2{
+  #portfolio2 h2 {
     text-align: center;
   }
 
   #how-we-work2,
-  #about{
+  #about {
     padding-top: 2rem;
   }
 
@@ -1391,8 +1404,8 @@ header {
   #services p {
     padding-bottom: 0;
   }
-  #portfolio img, 
-  #portfolio2 img{
+  #portfolio img,
+  #portfolio2 img {
     width: 100%;
   }
   #kapcsolat {
@@ -1429,7 +1442,7 @@ header {
   .hullam-contact {
     position: absolute;
     opacity: 15%;
-    bottom:11rem;
+    bottom: 11rem;
     width: 18rem;
   }
   .kor-contact {
@@ -1584,11 +1597,6 @@ header {
   header {
     padding-bottom: 1rem;
   }
-  #logo {
-    max-width: initial;
-    width: 20%;
-    margin: 0 auto 1rem auto;
-  }
   #tel {
     margin: 0 auto;
   }
@@ -1606,7 +1614,7 @@ header {
     font-size: 2rem;
   }
   #portfolio p,
-  #portfolio2 p{
+  #portfolio2 p {
     padding-bottom: 2rem;
   }
 
