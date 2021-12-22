@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" type="image/x-icon" href="img/favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
+      integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -24,8 +28,13 @@
         <input type="checkbox" class="toggle-menu" />
         <div class="hamburger"></div>
         <div class="menu">
-          <div class="dropdown" onmouseenter="showServicesDropdownMenu()" onmouseleave="hideServicesDropdownMenu()" onclick="showServicesDropdownMenu()">
-            <a class="menu-item-dropdown active-menu-item" id="servicesMenuItem">
+          <div
+            class="dropdown"
+            onmouseenter="showServicesDropdownMenu()"
+            onmouseleave="hideServicesDropdownMenu()"
+            onclick="showServicesDropdownMenu()"
+          >
+            <a class="menu-item-dropdown" id="servicesMenuItem">
               Szolgáltatásaink
               <i class="fa fa-caret-down"></i>
             </a>
@@ -35,24 +44,24 @@
               <a class="menu-item-dropdown" href="./webshop.html">Webshop készítés</a>
             </div>
           </div>
-          <a class="side-menu-item active-menu-item">
+          <a class="side-menu-item">
             Szolgáltatásaink
             <i class="fa fa-caret-down"></i>
           </a>
           <div class="side-dropdown-container">
-            <a class="side-menu-item-dropdown" href="#">Logó- és arculattervezés</a>
-            <a class="side-menu-item-dropdown" href="#">Egyedi weboldal</a>
-            <a class="side-menu-item-dropdown" href="#">Webshop készítés</a>
+            <a class="side-menu-item-dropdown" href="./arculat.html">Logó- és arculattervezés</a>
+            <a class="side-menu-item-dropdown" href="./design.html">Egyedi weboldal</a>
+            <a class="side-menu-item-dropdown" href="./webshop.html">Webshop készítés</a>
           </div>
-          <a class="menu-item" href="#">Munkáink</a>
-          <a class="menu-item" href="#">Rólunk</a>
-          <a class="menu-item" href="#">Ajánlatkérés</a>
+          <a class="menu-item" href="./munkaink.html">Munkáink</a>
+          <a class="menu-item" href="./rolunk.html">Rólunk</a>
+          <a class="menu-item active-menu-item" href="./kapcsolat.html">Ajánlatkérés</a>
         </div>
       </div>
     </header>
     <main>
       <section id="hero-contact">
-        <div class="content-box">
+        <div class="content-box-full">
           <div class="hero-text">
             <h2>Készen állsz a közös munkára?</h2>
             <p>Írj nekünk az alábbi adatok kitöltésével és hamarosan felvesszük veled a kapcsolatot.</p>
@@ -62,29 +71,25 @@
         <img src="img/kor.svg" alt="" class="kor-contact" />
       </section>
       <section id="how-we-work">
-        <div class="row content-box">
+        <div class="row content-box-wide how-we-work-reverse">
           <div class="col-1-2 text">
-            <div class="container">
-              <div class="contact-box">
-                <h2>Lépj kapcsolatba velünk!</h2>
-                <p>Röviden írd le az elképzelésed és hamarosan felvesszük veled a kapcsolatot!</p>
-                <input type="text" class="field" placeholder="Név" />
-                <input type="email" class="field" placeholder="E-mail" />
-                <input type="text" class="field" placeholder="Miben segíthetünk?" />
-                <textarea class="field area" placeholder="Üzenet "></textarea>
-                <div class="input_field terms">
-                  <label class="check">
-                    <input type="checkbox" />
-                    <span class="checkmark"></span>
-                  </label>
-                  <div>
-                    <p>Elfogadom az Adatkezelési Tájékoztatóban foglaltakat.</p>
-                  </div>
-                </div>
-
-                <div><a class="button" href="/"> Küldés </a></div>
+            <h2>Lépj kapcsolatba velünk!</h2>
+            <p>Röviden írd le az elképzelésed és hamarosan felvesszük veled a kapcsolatot!</p>
+            <input type="text" class="field" placeholder="Név" />
+            <input type="email" class="field" placeholder="E-mail" />
+            <input type="text" class="field" placeholder="Miben segíthetünk?" />
+            <textarea class="field area" placeholder="Üzenet "></textarea>
+            <div class="input_field terms">
+              <label class="check">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <div>
+                <p>Elfogadom az Adatkezelési Tájékoztatóban foglaltakat.</p>
               </div>
             </div>
+
+            <div><a class="button" href="/"> Küldés </a></div>
           </div>
           <div class="col-1-2">
             <img src="img/kapcsolat22.svg" alt="" id="kapcsolat" />
@@ -92,26 +97,30 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="content-box">
-        <div id="foot-info">
-          <ul>
-            <li>
-              <a href="#">Impresszum</a>
-            </li>
-            <li>
-              <a href="#">Adatkezelési tájékoztató</a>
-            </li>
-            <li>
-              <a href="#">Süti tájékoztató</a>
-            </li>
-          </ul>
+    <footer class="footer">
+      <div class="content-box-wide">
+        <div class="footer-container">
+          <img class="footer-logo" src="img/whitelogo.svg" alt="" />
         </div>
-        <div id="foot-contact">
-          <ul>
-            <li>Impresszum</li>
-            <li>Adatkezelési tájékoztató</li>
-          </ul>
+        <div class="footer-container">
+          <h5>Fontos tájékoztatók</h5>
+          <a href="#">Impresszum</a>
+          <a href="#">Adatkezelési tájékoztató</a>
+        </div>
+        <div class="footer-container footer-contact">
+          <h5>Kapcsolat</h5>
+          <div class="email">
+            <div class="icon-container">
+              <i class="far fa-envelope icon"></i>
+            </div>
+            <a href="">info@webvibes.io</a>
+          </div>
+          <div class="mobile">
+            <div class="icon-container">
+              <i class="fas fa-mobile-alt icon"></i>
+            </div>
+            <a href="">0620123456789</a>
+          </div>
         </div>
       </div>
     </footer>

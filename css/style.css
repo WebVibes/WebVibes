@@ -21,35 +21,56 @@ body {
 p {
   margin-bottom: 0.7rem;
   line-height: 1.5;
+  font-size: 18px;
 }
 h1,
 h2,
 h3 {
   line-height: 1.2;
-  /* margin-bottom: 10px; */
 }
 h1,
 h2 {
-  font-size: 2.75rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 1.4rem;
   font-weight: bold;
   font-weight: 600;
 }
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+.mi {
+  width: 100%;
+  height: auto;
+}
+
 a {
   color: white;
   text-decoration: none;
 }
 .button {
-  border: none;
+  border: 1px solid #f96755;
   background: linear-gradient(to right, #f95283, #ff3527);
   color: white;
-  padding: 0.4rem 1.6rem;
-  padding-top: 0.5rem;
   border-radius: 50px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   transition: all 0.3s linear;
@@ -57,7 +78,9 @@ a {
   font-weight: bold;
   display: inline-block;
   margin: 0;
-  padding: 0.8rem 1.6rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 .button:hover {
   border: 1px solid #f96755;
@@ -218,18 +241,17 @@ section {
   padding-bottom: 1.5rem;
   max-width: 30rem;
   color: white;
+  z-index: 3;
+}
+
+.hero-text p {
+  font-size: 22px;
 }
 
 #services h2 {
   text-align: center;
-  padding-top: 5rem;
 }
-#services h3 {
-  padding-top: 1rem;
-}
-#services p {
-  padding-bottom: 1rem;
-}
+
 .box {
   align-items: left;
   background: #fff;
@@ -239,7 +261,24 @@ section {
   margin: 1.5rem;
   padding: 3rem 2rem;
   border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
 }
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-text h3 {
+  padding-bottom: 1rem;
+}
+
+.box-button-container {
+  margin-top: auto;
+}
+
 #portfolio h2 {
   padding-bottom: 1rem;
   text-align: center;
@@ -274,9 +313,7 @@ section {
   line-height: 1.4;
   position: relative;
   padding-left: 30px;
-}
-#about {
-  padding-top: 5rem;
+  font-size: 18px;
 }
 
 #how-we-work ul li:before,
@@ -307,7 +344,7 @@ section {
   transform: rotate(45deg);
 }
 #kapcsolat {
-  padding-top: 8rem;
+  padding-top: 0;
 }
 #how-we-work2 h2 {
   padding-bottom: 1rem;
@@ -316,56 +353,62 @@ section {
   margin-top: 5rem;
   margin-bottom: 1rem;
 }
-footer {
-  background: #f6f6f6;
-  padding: 1.5rem 0;
-  font-size: smaller;
-  color: #333;
+
+.footer {
+  width: 100%;
+  height: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background: #f6f6f6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.foot-logo {
-  padding: 20px;
-}
-.foot-info,
-.foot-contact {
+.footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10px;
+  width: calc(33.33333333% - 2rem);
+}
+
+.footer-container h5 {
+  margin-bottom: 10px;
+}
+.footer-container a {
+  padding: 4px;
+  font-size: smaller;
+  color: #333;
+  font-size: 18px;
+}
+
+.footer-logo {
+  max-height: 150px;
+  padding: 20px;
+}
+
+.email,
+.mobile {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-.email {
-  display: inline-block;
-  background: url(../img/email.svg) center left no-repeat;
-  background-size: auto 100%;
-  padding-left: 2rem;
-  color: inherit;
-}
-.tel {
-  display: inline-block;
-  background: url(../img/tel.svg) center left no-repeat;
-  background-size: auto 100%;
-  padding-left: 2rem;
-  color: inherit;
-}
-
-.foot-info li a,
-.foot-contact li a {
-  color: black;
-}
-
-#foot-info li,
-#foot-contact li {
+.icon-container {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
   display: flex;
-  margin: 0 1rem;
-  padding: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#foot-info li a {
-  color: inherit;
+
+.icon {
+  font-size: 30px;
 }
+
 #copyright {
   padding: 1rem 0;
   font-size: smaller;
@@ -377,12 +420,30 @@ img {
   height: auto;
 }
 .content-box {
+  max-width: 1140px;
   width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.content-box-wide {
+  max-width: 1800px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-box-full {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #how-we-work,
 #how-we-work2,
 .laptop,
@@ -508,6 +569,10 @@ header {
   padding-bottom: 1rem;
 }
 
+.logo {
+  z-index: 3;
+}
+
 #webshop h1 {
   padding-top: 5rem;
 }
@@ -603,7 +668,7 @@ header {
     padding-bottom: 3rem;
   }
   #kapcsolat {
-    padding-top: 10rem;
+    padding-top: 6rem;
     padding-bottom: 3rem;
   }
   .logoarculat,
@@ -839,7 +904,7 @@ header {
     font-size: 1.3rem;
   }
   #kapcsolat {
-    padding-top: 12rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
   }
   .logoarculat {
@@ -1138,18 +1203,29 @@ header {
     right: 50%;
     margin-right: -13rem;
   }
+  .footer .content-box-wide {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .footer-container {
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .icon {
+    font-size: 20px;
+  }
+
   .hero-text {
     padding-bottom: 0;
-  }
-  section {
-    margin-bottom: 0;
   }
   header {
     padding-bottom: 1rem;
   }
   #kapcsolat {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   #hero,
   #hero2,
@@ -1323,9 +1399,6 @@ header {
   .hero-text {
     padding-bottom: 0;
   }
-  section {
-    margin-bottom: 0;
-  }
   header {
     padding-bottom: 1rem;
   }
@@ -1409,7 +1482,8 @@ header {
     width: 100%;
   }
   #kapcsolat {
-    padding-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
   }
   .hullam-contact2 {
     position: absolute;
@@ -1590,9 +1664,6 @@ header {
   }
   .hero-text {
     padding-bottom: 0;
-  }
-  section {
-    margin-bottom: 0;
   }
   header {
     padding-bottom: 1rem;
@@ -1784,9 +1855,6 @@ header {
   }
   .hero-text {
     padding-bottom: 0;
-  }
-  section {
-    margin-bottom: 0;
   }
   header {
     padding-bottom: 1rem;
