@@ -13,6 +13,36 @@
     font-size: 16px;
   }
 }
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
 body {
   font-family: "Hind Siliguri", sans-serif;
   color: #333;
@@ -150,7 +180,6 @@ section {
   right: 0;
   width: auto;
   height: 85%;
-  z-index: 1;
 }
 .webkep {
   position: absolute;
@@ -241,7 +270,6 @@ section {
   padding-bottom: 1.5rem;
   max-width: 30rem;
   color: white;
-  z-index: 3;
 }
 
 .hero-text p {
@@ -567,6 +595,7 @@ img {
 }
 header {
   padding-bottom: 1rem;
+  z-index: 2;
 }
 
 .logo {
@@ -1040,6 +1069,10 @@ header {
   }
 }
 @media screen and (max-width: 990px) {
+  #hamburger-icon {
+    display: block;
+  }
+
   #about {
     padding-top: 3rem;
   }

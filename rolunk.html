@@ -21,10 +21,18 @@
         <a href="./index.html"><img src="img/whitelogo.svg" alt="" /></a>
       </div>
       <div class="navigation">
-        <input type="checkbox" class="toggle-menu" />
-        <div class="hamburger"></div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         <div class="menu">
-          <div class="dropdown" onmouseenter="showServicesDropdownMenu()" onmouseleave="hideServicesDropdownMenu()" onclick="showServicesDropdownMenu()">
+          <div
+            class="dropdown"
+            onmouseenter="showServicesDropdownMenu()"
+            onmouseleave="hideServicesDropdownMenu()"
+            onclick="showServicesDropdownMenu()"
+          >
             <a class="menu-item-dropdown" id="servicesMenuItem">
               Szolgáltatásaink
               <i class="fa fa-caret-down"></i>
@@ -36,8 +44,8 @@
             </div>
           </div>
           <a class="side-menu-item">
-            Szolgáltatásaink
-            <i class="fa fa-caret-down"></i>
+            <span>Szolgáltatásaink</span>
+            <i class="fa fa-caret-down" style="font-size: 30px"></i>
           </a>
           <div class="side-dropdown-container">
             <a class="side-menu-item-dropdown" href="./arculat.html">Logó- és arculattervezés</a>
@@ -66,9 +74,9 @@
           <div class="col-1-2">
             <h2>Bemutatkozunk</h2>
             <p>
-              A hatékonyság érdekében, komplex és kreatív megoldásokban gondolkodunk a vizuális irányvonal kialakításában, folyamatosan keressük a lehetőségeket
-              és a változatosságot. Weboldalaink készítése során rendszeresen konzultálunk ügyfeleinkkel, hogy a végeredmény valóban a megrendelő elvárásait
-              tükrözze. Célunk, hogy szakértelmünkkel segítsük a vállalkozók online jelenlétét!
+              A hatékonyság érdekében, komplex és kreatív megoldásokban gondolkodunk a vizuális irányvonal kialakításában, folyamatosan
+              keressük a lehetőségeket és a változatosságot. Weboldalaink készítése során rendszeresen konzultálunk ügyfeleinkkel, hogy a
+              végeredmény valóban a megrendelő elvárásait tükrözze. Célunk, hogy szakértelmünkkel segítsük a vállalkozók online jelenlétét!
             </p>
           </div>
           <div class="col-1-2">

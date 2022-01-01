@@ -21,10 +21,18 @@
         <a href="./index.html"><img src="img/whitelogo.svg" alt="" /></a>
       </div>
       <div class="navigation">
-        <input type="checkbox" class="toggle-menu" />
-        <div class="hamburger"></div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         <div class="menu">
-          <div class="dropdown" onmouseenter="showServicesDropdownMenu()" onmouseleave="hideServicesDropdownMenu()" onclick="showServicesDropdownMenu()">
+          <div
+            class="dropdown"
+            onmouseenter="showServicesDropdownMenu()"
+            onmouseleave="hideServicesDropdownMenu()"
+            onclick="showServicesDropdownMenu()"
+          >
             <a class="menu-item-dropdown active-menu-item" id="servicesMenuItem">
               Szolgáltatásaink
               <i class="fa fa-caret-down"></i>
@@ -36,8 +44,8 @@
             </div>
           </div>
           <a class="side-menu-item active-menu-item">
-            Szolgáltatásaink
-            <i class="fa fa-caret-down"></i>
+            <span>Szolgáltatásaink</span>
+            <i class="fa fa-caret-down" style="font-size: 30px"></i>
           </a>
           <div class="side-dropdown-container">
             <a class="side-menu-item-dropdown" href="./arculat.html">Logó- és arculattervezés</a>
@@ -56,8 +64,8 @@
           <div class="hero-text hero-text-design">
             <h1>Webdesign, Sitebuilt</h1>
             <p>
-              A digitális arculat legfontosabb eszköze a weboldal. Segítünk, hogy kitűnj a tömegből és weboldalad egyszerre feleljen meg marketing és
-              kommunikációs céloknak is. Pontos árajánlatot a weboldal készítéséről az igényeid felmérése után tudunk adni.
+              A digitális arculat legfontosabb eszköze a weboldal. Segítünk, hogy kitűnj a tömegből és weboldalad egyszerre feleljen meg
+              marketing és kommunikációs céloknak is. Pontos árajánlatot a weboldal készítéséről az igényeid felmérése után tudunk adni.
             </p>
           </div>
         </div>
@@ -75,8 +83,8 @@
               <div class="box-text">
                 <h3>Igény felmérés</h3>
                 <p>
-                  Online meeting során felmérjük a vállalkozásod múltját, jelenét és vízióját, felderítjük az értékeidet, célközönségedet, versenytársaidat. Ez
-                  lesz a tervezési folyamat alapja.
+                  Online meeting során felmérjük a vállalkozásod múltját, jelenét és vízióját, felderítjük az értékeidet, célközönségedet,
+                  versenytársaidat. Ez lesz a tervezési folyamat alapja.
                 </p>
               </div>
             </div>
@@ -85,7 +93,8 @@
               <div class="box-text">
                 <h3>Tervek elkészítése</h3>
                 <p>
-                  látványtervek segítségével bemutatjuk a fő grafikai irányt, amit igényeid szerint módosítunk, hogy a végeredménnyel teljesen azonosulni tudj.
+                  látványtervek segítségével bemutatjuk a fő grafikai irányt, amit igényeid szerint módosítunk, hogy a végeredménnyel
+                  teljesen azonosulni tudj.
                 </p>
               </div>
             </div>
@@ -110,7 +119,10 @@
             <p>Információt szolgáltatni, egyeztetni, jóváhagyni.</p>
             <h2>A weboldal ára</h2>
             <h3>120 000 Ft-tól</h3>
-            <p>A projekt teljes díjának 30%-át a tervek elkészítése előtt kiszámlázzuk. A fennmaradó 70%-ot az átadást megelőzően kell majd kifizetned.</p>
+            <p>
+              A projekt teljes díjának 30%-át a tervek elkészítése előtt kiszámlázzuk. A fennmaradó 70%-ot az átadást megelőzően kell majd
+              kifizetned.
+            </p>
           </div>
         </div>
       </section>
