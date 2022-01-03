@@ -21,11 +21,14 @@
         <a href="./index.html"><img src="img/whitelogo.svg" alt="" /></a>
       </div>
       <div class="navigation">
-        <input type="checkbox" class="toggle-menu" />
-        <div class="hamburger"></div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         <div class="menu">
           <div class="dropdown" onmouseenter="showServicesDropdownMenu()" onmouseleave="hideServicesDropdownMenu()" onclick="showServicesDropdownMenu()">
-            <a class="menu-item-dropdown active-menu-item" id="servicesMenuItem">
+            <a class="menu-item-dropdown" id="servicesMenuItem">
               Szolgáltatásaink
               <i class="fa fa-caret-down"></i>
             </a>
@@ -35,18 +38,18 @@
               <a class="menu-item-dropdown" href="./webshop.html">Webshop készítés</a>
             </div>
           </div>
-          <a class="side-menu-item active-menu-item">
-            Szolgáltatásaink
-            <i class="fa fa-caret-down"></i>
+          <a class="side-menu-item">
+            <span>Szolgáltatásaink</span>
+            <i class="fa fa-caret-down" style="font-size: 30px"></i>
           </a>
           <div class="side-dropdown-container">
-            <a class="side-menu-item-dropdown" href="#">Logó- és arculattervezés</a>
-            <a class="side-menu-item-dropdown" href="#">Egyedi weboldal</a>
-            <a class="side-menu-item-dropdown" href="#">Webshop készítés</a>
+            <a class="side-menu-item-dropdown" href="./arculat.html">Logó- és arculattervezés</a>
+            <a class="side-menu-item-dropdown" href="./design.html">Egyedi weboldal</a>
+            <a class="side-menu-item-dropdown" href="./webshop.html">Webshop készítés</a>
           </div>
-          <a class="menu-item" href="#">Munkáink</a>
-          <a class="menu-item" href="#">Rólunk</a>
-          <a class="menu-item" href="#">Ajánlatkérés</a>
+          <a class="menu-item active-menu-item" href="./munkaink.html">Munkáink</a>
+          <a class="menu-item" href="./rolunk.html">Rólunk</a>
+          <a class="menu-item" href="./kapcsolat.html">Ajánlatkérés</a>
         </div>
       </div>
     </header>

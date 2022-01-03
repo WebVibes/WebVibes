@@ -24,3 +24,7 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+}
